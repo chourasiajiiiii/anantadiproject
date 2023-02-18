@@ -1,30 +1,35 @@
 {
-  "name": "react-node-boilerplate",
-  "version": "1.0.0",
-  "description": "A React Js and Node Js boilerplate for building a new project. It uses create-react-app",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client-install": "npm install --prefix client",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  "engines": {
-    "node": "10.10.0"
-  },
-  "author": "Imran Sayed",
-  "license": "ISC",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "aws-sdk": "^2.814.0",
-    "body-parser": "^1.18.3",
-    "concurrently": "^4.0.1",
-    "express": "^4.16.3",
-    "mongoose": "^5.7.5",
-    "multer": "^1.4.0",
-    "multer-s3": "^2.7.0",
-    "path": "^0.12.7",
-    "url": "^0.11.0",
-    "validator": "^13.7.0"
-  }
+    "axios": "^0.21.2",
+    "classnames": "^2.2.6",
+    "jquery": "^3.5.0",
+    "prop-types": "^15.6.2",
+    "qs": "^6.5.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "proxy": "http://localhost:5000",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
